@@ -19,5 +19,5 @@ With the environment variables below you can customize your 3D RGB Xmas Tree
 You can change the delay between updates of led's with the `DELAY` variable (seconds); set it anywhere from `0` to `~`, the default is 0.5 seconds.
 
 ### Brightness
-You can change the brightness of the led's with the `BRIGHTNESS` variable; set it anywhere from `0.01` to `1`, the default is 0.08.
-You'll find that 1 is _extremely bright_ and even 0.08 (default) is bright enough if the tree is on your desk :)
+You can change the brightness of the led's with the `BRIGHTNESS` variable; set it anywhere from `1` to `100`, the default is 8.
+You'll find that 100 is _extremely bright_ and even 8 (default) is bright enough if the tree is on your desk :)
