@@ -6,7 +6,7 @@ import os
 import signal
 
 
-BRIGHTNESS = os.environ["BRIGHTNESS"] if "BRIGHTNESS" in os.environ else 0.08
+BRIGHTNESS = (int(os.environ["BRIGHTNESS"])/100) if "BRIGHTNESS" in os.environ else 0.08
 DELAY = os.environ["DELAY"] if "DELAY" in os.environ else 0.5
 
 tree = RGBXmasTree(brightness=BRIGHTNESS)
