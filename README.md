@@ -1,7 +1,7 @@
 # balena-rgbxmastree
 
 ## Required hardware
-* Raspberry Pi (tested with Zero W)
+* Raspberry Pi (tested with Zero W, Pi 2 model B, Pi 4 model B)
 * [3D RGB Xmas Tree for Raspberry Pi](https://thepihut.com/products/3d-rgb-xmas-tree-for-raspberry-pi)
 * 8GB SD Card (Sandisk Extreme Pro recommended)
 * Power supply
