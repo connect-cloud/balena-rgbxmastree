@@ -21,3 +21,7 @@ You can change the delay between updates of led's with the `DELAY` variable (sec
 ### Brightness
 You can change the brightness of the led's with the `BRIGHTNESS` variable; set it anywhere from `1` to `100`, the default is 8.
 You'll find that 100 is _extremely bright_ and even 8 (default) is bright enough if the tree is on your desk :)
+
+### Start time and stop time
+If you want the Xmas Tree only to blink during the day (or other time range) you can configure at what time it starts and stops blinking with the
+`STARTTIME` and `STOPTIME` variable; set these variables anywhere from `0000` to `2359`. The default are 0000 and 2359
