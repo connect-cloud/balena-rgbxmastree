@@ -1,4 +1,5 @@
 from time import sleep
+from datetime import datetime
 from tree import RGBXmasTree
 from colorzero import Color
 import random
@@ -8,6 +9,8 @@ import signal
 
 BRIGHTNESS = (int(os.environ["BRIGHTNESS"])/100) if "BRIGHTNESS" in os.environ else 0.08
 DELAY = float(os.environ["DELAY"]) if "DELAY" in os.environ else 0.5
+STARTTIME = os.environ["STARTTIME"] if "STARTTIME" in os.environ else "0000"
+STOPTIME = os.environ["STOPTIME"] if "STOPTIME" in os.environ else "2359"
 
 tree = RGBXmasTree(brightness=BRIGHTNESS)
 
@@ -33,17 +36,21 @@ class GracefulKiller:
     print("\nReceived {} signal".format(self.signals[signum]))
     print("Cleaning up resources. End of the program")
     self.kill_now = True
+    tree.off()
+    tree.close()
+    quit()
 
 
 if __name__ == "__main__":
     killer = GracefulKiller()
     while not killer.kill_now:
-        sleep(DELAY)
-        pixel = random.choice(tree)
-        pixel.color = random_color()
-
-    print("KB interrupt received")
-    tree.off()
-    tree.close()
+        now = datetime.now().strftime("%H%M")
+        if now >= STARTTIME and now < STOPTIME:
+            pixel = random.choice(tree)
+            pixel.color = random_color()
+            sleep(DELAY)
+        else:
+            tree.off()
+            sleep(60)
 
 
