@@ -12,6 +12,8 @@ data:
   applicationEnvironmentVariables:
     - BRIGHTNESS: 0.08
     - DELAY: 0.5
+    - STARTTIME: 0000
+    - STOPTIME: 2359
   defaultDeviceType: "raspberry-pi"
   supportedDeviceTypes:
     - "raspberry-pi"
