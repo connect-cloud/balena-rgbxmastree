@@ -20,3 +20,4 @@ data:
     - "raspberry-pi2"
     - "raspberrypi3"
     - "raspberrypi4-64"
+    - "fincm3"
