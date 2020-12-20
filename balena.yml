@@ -8,7 +8,7 @@ assets:
   - url: "https://raw.githubusercontent.com/connect-cloud/balena-rgbxmastree/master/logo.png"
     name: "logo"
 data:
-  description: "The Pi Hut RGB 3D RGB Xmas Tree for Raspberry Pi"
+  description: "The Pi Hut 3D RGB Xmas Tree for Raspberry Pi"
   applicationEnvironmentVariables:
     - BRIGHTNESS: 0.08
     - DELAY: 0.5
