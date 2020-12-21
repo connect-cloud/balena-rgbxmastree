@@ -1,6 +1,6 @@
 version: "2"
 slug: "balena-rgbxmastree"
-name: "balenaRGB Xmas Tree"
+name: "RGB Xmas Tree"
 type: "sw.application"
 assets:
   - url: "https://github.com/connect-cloud/balena-rgbxmastree"
