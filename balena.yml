@@ -1,14 +1,16 @@
-version: "2"
-slug: "balena-rgbxmastree"
 name: "RGB Xmas Tree"
 type: "sw.application"
+description: "The Pi Hut 3D RGB Xmas Tree for Raspberry Pi"
 assets:
-  - url: "https://github.com/connect-cloud/balena-rgbxmastree"
-    name: "repository"
-  - url: "https://raw.githubusercontent.com/connect-cloud/balena-rgbxmastree/master/logo.png"
-    name: "logo"
+  repository:
+    type: "blob.asset"
+    data:
+      url: "https://github.com/connect-cloud/balena-rgbxmastree"
+  logo:
+    type: "blob.asset"
+    data:
+      url: "https://raw.githubusercontent.com/connect-cloud/balena-rgbxmastree/master/logo.png"
 data:
-  description: "The Pi Hut 3D RGB Xmas Tree for Raspberry Pi"
   applicationEnvironmentVariables:
     - BRIGHTNESS: 0.08
     - DELAY: 0.5
