@@ -12,7 +12,7 @@ assets:
       url: "https://raw.githubusercontent.com/connect-cloud/balena-rgbxmastree/master/logo.png"
 data:
   applicationEnvironmentVariables:
-    - BRIGHTNESS: 0.08
+    - BRIGHTNESS: 8
     - DELAY: 0.5
     - STARTTIME: 0000
     - STOPTIME: 2359
