@@ -1,4 +1,4 @@
-FROM balenalib/raspberry-pi-debian-python:3.10-buster-run
+FROM balenalib/raspberry-pi-debian-python:3.7-buster-run
 RUN apt-get update && \
     apt-get -y install python3-rpi.gpio && \
     rm -rf /var/lib/apt/lists/*
