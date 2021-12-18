@@ -42,17 +42,19 @@ class GracefulKiller:
 
 
 if __name__ == "__main__":
-    # Initial color the tree
-    for pixel in tree:
-        pixel.color = random_color()
-    
+    initial_color = True
     killer = GracefulKiller()
     while not killer.kill_now:
         now = datetime.now().strftime("%H%M")
         if now >= STARTTIME and now < STOPTIME:
+            if initial_color:
+                for pixel in tree:
+                    pixel.color = random_color()
+                initial_color = False
             pixel = random.choice(tree)
             pixel.color = random_color()
             sleep(DELAY)
         else:
             tree.off()
+            initial_color = True
             sleep(60)
