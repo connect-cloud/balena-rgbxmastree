@@ -29,9 +29,14 @@ If you want the Xmas Tree only to blink during the day (or other time range) you
 ### Philips Hue integration
 Wouldn't it be nice if the xmas tree goes on and off at the same time as the lights in the room it's standing. If you are using Philips Hue lights and the tree is able to reach the Hue bridge you can connect it so the tree will go on when a specific light is turned on.
 To turn this feature on set `USE_HUE_LIGHT_STATUS` to True and configure the following params:
+
 `USE_HUE_LIGHT_STATUS` True
+
 `HUE_IP` Set the IP address of the Hue bridge
+
 `HUE_USERNAME` Set the username for the Hue bridge see following link to get a username https://developers.meethue.com/develop/get-started-2/
+
 `HUE_LIGHT_NAME` Set the name of the Hue light you want to sync with the xmas tree
+
 `HUE_USE_SSL` Set to True if you want to use HTTPS else it will be HTTP
 
