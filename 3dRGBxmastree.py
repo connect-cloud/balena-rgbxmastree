@@ -104,7 +104,6 @@ if __name__ == "__main__":
         now = datetime.now().strftime("%H%M")
         if use_hue_light_status:
             if get_hue_light_status_by_name(hue_light_name, hue_base_url):
-                print('use hue')
                 initialize_tree = color_tree(initialize_tree)
                 sleep(DELAY)
             else:
