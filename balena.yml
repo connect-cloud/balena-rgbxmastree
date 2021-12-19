@@ -16,6 +16,11 @@ data:
     - DELAY: 0.5
     - STARTTIME: 0000
     - STOPTIME: 2359
+    - USE_HUE_LIGHT_STATUS: False
+    - HUE_IP: 1.1.1.1
+    - HUE_USERNAME: username
+    - HUE_LIGHT_NAME: Office
+    - HUE_USE_SSL: False
   defaultDeviceType: "raspberry-pi"
   supportedDeviceTypes:
     - "raspberry-pi"
